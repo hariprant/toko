@@ -20,7 +20,7 @@
     VALUES ('', '$nama_produk', '$warna', '$jumlah', '$id_merk', '$id_kategori')";
 
     if (mysqli_query($conn, $sql)) {
-        header("Location: produk.php");
+        header("Location: index.php");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
