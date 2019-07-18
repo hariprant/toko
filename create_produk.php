@@ -13,8 +13,8 @@
     $nama_produk = $_POST['nama_produk'];
     $warna = $_POST['warna_produk'];
     $jumlah = $_POST['jumlah_produk'];
-    $id_merk = $_POST['merk_produk'];
-    $id_kategori = $_POST['kategori_produk'];
+    $id_merk = $_POST['merk'];
+    $id_kategori = $_POST['kategori'];
 
     $sql = "INSERT INTO produk (id_produk,nama_produk,warna,jumlah,id_merk,id_kategori)
     VALUES ('', '$nama_produk', '$warna', '$jumlah', '$id_merk', '$id_kategori')";

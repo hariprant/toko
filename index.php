@@ -97,7 +97,7 @@
             <div class="form-group row">
                 <label for="merk_produk" class="col-sm-3 col-form-label">Merk Produk</label>
                 <div class="col-sm-7">
-                <select class="custom-select">
+                <select class="custom-select" name="merk">
                 <option selected>Pilih Merk</option>
                     <?php    
                     $result = mysqli_query($conn,"SELECT * FROM merk");
@@ -114,8 +114,8 @@
             <div class="form-group row">
                 <label for="kategori_produk" class="col-sm-3 col-form-label">Kategori Produk</label>
                 <div class="col-sm-7">
-                    <select class="custom-select">
-                    <option selected>Pilih Merk</option>
+                    <select class="custom-select" name="kategori">
+                    <option selected>Pilih Kategori</option>
                     <?php    
                     $result = mysqli_query($conn,"SELECT * FROM kategori");
                     if (mysqli_num_rows($result) > 0) {
