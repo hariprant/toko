@@ -14,8 +14,8 @@
     $nama_produk = $_POST['nama_produk'];
     $warna = $_POST['warna_produk'];
     $jumlah = $_POST['jumlah_produk'];
-    $id_merk = $_POST['merk_produk'];
-    $id_kategori = $_POST['kategori_produk'];
+    $id_merk = $_POST['merk'];
+    $id_kategori = $_POST['kategori'];
 
     $sql = "UPDATE produk SET id_produk='$id_produk', nama_produk='$nama_produk', warna='$warna', jumlah='$jumlah', id_merk='$id_merk', id_kategori='$id_kategori' WHERE id_produk=$id_produk";
 

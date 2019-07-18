@@ -14,10 +14,8 @@
         <div class="container">
             <h2 class="text-center">HALAMAN MERK TOKO</h2>
             <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Tambah Merk
-            </button>
-            <br><br>
+            <a type="button" class="btn btn-secondary mb-3" href="index.php" role="button">Back</a>
+            <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal">Tambah Merk</button>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <form action="create_merk.php" method="post">

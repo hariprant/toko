@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 // sql to delete a record
-$sql = "DELETE FROM merk WHERE id_merk=".$_GET['id_merk'];
+$sql = "DELETE FROM kategori WHERE id_kategori=".$_GET['id_kategori'];
 
 if (mysqli_query($conn, $sql)) {
     echo "Record deleted successfully";
@@ -21,5 +21,5 @@ if (mysqli_query($conn, $sql)) {
 }
 
 mysqli_close($conn);
-header("location:merk.php");
+header("location:create_kategori.php");
 ?>

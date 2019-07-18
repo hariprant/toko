@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2019 at 04:24 AM
+-- Generation Time: Jul 18, 2019 at 06:14 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.1.30
 
@@ -39,8 +39,7 @@ CREATE TABLE `kategori` (
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
 (1, 'Makanan'),
-(2, 'Minuman'),
-(3, 'Snack');
+(2, 'Minuman');
 
 -- --------------------------------------------------------
 
@@ -58,8 +57,14 @@ CREATE TABLE `merk` (
 --
 
 INSERT INTO `merk` (`id_merk`, `nama_merk`) VALUES
-(71, 'Rinso Clean'),
-(72, 'Dayaa');
+(71, 'Tiga Kelinci'),
+(72, 'Indomie'),
+(73, 'Sarimi'),
+(74, 'Mizone'),
+(75, 'Teh Pucuk'),
+(77, 'Better'),
+(78, 'Biskuat'),
+(80, 'Dancow');
 
 -- --------------------------------------------------------
 
@@ -81,7 +86,9 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `warna`, `jumlah`, `id_merk`, `id_kategori`) VALUES
-(6, 'Buku', 'Pink', 28, 71, 3);
+(6, 'Teh', 'Pink', 28, 75, 2),
+(8, 'Mijon', 'Orange', 25, 71, 2),
+(9, 'Sarimi Duo', 'Kuning', 47, 73, 1);
 
 --
 -- Indexes for dumped tables
@@ -121,13 +128,13 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `merk`
 --
 ALTER TABLE `merk`
-  MODIFY `id_merk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id_merk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables

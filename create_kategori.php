@@ -13,8 +13,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
+                        <a type="button" class="btn btn-secondary mb-2" href="index.php" role="button">Back</a>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal">
                               Tambah Data Kategori
                             </button>
                             <!-- Modal -->
