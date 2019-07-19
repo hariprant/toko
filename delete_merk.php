@@ -15,11 +15,13 @@ if (!$conn) {
 $sql = "DELETE FROM merk WHERE id_merk=".$_GET['id_merk'];
 
 if (mysqli_query($conn, $sql)) {
-    echo "Record deleted successfully";
+    header("location:merk.php");
 } else {
-    echo "Error deleting record: " . mysqli_error($conn);
+    echo '<script language="javascript">
+    alert("Maaf Data tidak dapat dihapus !!")
+    window.location.href = "merk.php"
+    </script>';
 }
 
 mysqli_close($conn);
-header("location:merk.php");
 ?>

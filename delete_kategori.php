@@ -15,11 +15,14 @@ if (!$conn) {
 $sql = "DELETE FROM kategori WHERE id_kategori=".$_GET['id_kategori'];
 
 if (mysqli_query($conn, $sql)) {
-    echo "Record deleted successfully";
+    header("location:create_kategori.php");
 } else {
-    echo "Error deleting record: " . mysqli_error($conn);
+    echo '<script language="javascript">
+        alert("Maaf Data tidak dapat dihapus !!")
+        window.location.href = "create_kategori.php"
+        </script>';
 }
 
 mysqli_close($conn);
-header("location:create_kategori.php");
+
 ?>

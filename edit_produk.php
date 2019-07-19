@@ -99,7 +99,7 @@ $sql = "SELECT * FROM produk WHERE id_produk=$id_produk";
             </div>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Edit</button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </div>
                 </form>

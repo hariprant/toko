@@ -18,7 +18,10 @@
     if ($conn->query($sql) === TRUE) {
         header("Location: index.php");
     } else {
-        echo "Error deleting record: " . $conn->error;
+        echo '<script language="javascript">
+        alert("Maaf Data tidak dapat dihapus !!")
+        window.location.href = "index.php"
+        </script>';
     }
 
     $conn->close();
