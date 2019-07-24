@@ -14,14 +14,14 @@ if (!$conn) {
 }
 
 $sql = "INSERT INTO merk (id_merk, nama_merk)
-VALUES ('', '".$_POST['nama_merk']."')";
+VALUES (' ', '".$_POST['nama_merk']."')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    header("location:merk.php");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
 mysqli_close($conn);
-header("location:merk.php");
+
 ?>

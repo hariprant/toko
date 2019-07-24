@@ -16,8 +16,8 @@
     $id_merk = $_POST['merk'];
     $id_kategori = $_POST['kategori'];
 
-    $sql = "INSERT INTO produk (id_produk,nama_produk,warna,jumlah,id_merk,id_kategori)
-    VALUES ('', '$nama_produk', '$warna', '$jumlah', '$id_merk', '$id_kategori')";
+    $sql = "INSERT INTO produk (nama_produk,warna,jumlah,id_merk,id_kategori)
+    VALUES ('$nama_produk', '$warna', '$jumlah', '$id_merk', '$id_kategori')";
 
     if (mysqli_query($conn, $sql)) {
         header("Location: index.php");

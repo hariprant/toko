@@ -13,8 +13,8 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO kategori (id_kategori, nama_kategori)
-VALUES ('".$_POST['id_kategori']."', '".$_POST['nama_kategori']."')";
+$sql = "INSERT INTO kategori (nama_kategori)
+VALUES ('".$_POST['nama_kategori']."')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
